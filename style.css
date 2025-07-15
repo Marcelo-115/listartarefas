@@ -78,3 +78,25 @@ body{
     color: gray;
     opacity: 0.7;
 }
+
+
+
+ol {
+    list-style: decimal inside;
+    counter-reset: item;
+    padding-left: 0;
+}
+
+ol li {
+    counter-increment: item;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+ol li::before {
+    content: counter(item) ". ";
+    margin-right: 8px;
+    font-weight: bold;
+}
