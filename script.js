@@ -12,7 +12,7 @@ function adicionarTarefa(){
     li.innerHTML = tarefa + '<span onclick="deletarTarefa(this)">❌</span>'
     li.setAttribute("onclick", "concluirTarefa(this)");
    
-    document.querySelector('ul').appendChild(li)
+    document.querySelector('ol').appendChild(li)
    
     document.querySelector("input").value = ''
 
